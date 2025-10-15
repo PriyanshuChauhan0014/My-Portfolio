@@ -1,0 +1,226 @@
+/* ===== General Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #4d8097, #0d3542, #2c5364); /* dark gradient background */
+    color: #ffffff; /* default text white */
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* ===== Hero Section ===== */
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    background: linear-gradient(135deg,  #1c1c1c, #2c5364 100%);
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #00fff0;/* cyan accent */
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #f0f0f0; /* light text */
+  }
+  
+  .hero-buttons a {
+    margin: 0 10px;
+  }
+  
+  /* ===== Buttons ===== */
+  .btn {
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+    color: #f0f0f0;
+    background: linear-gradient(90deg, #00fff0, #ff6bcb); /* vibrant gradient */
+    border: none;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 255, 240, 0.4);
+  }
+  
+  .btn.secondary {
+    background: transparent;
+    border: 2px solid #00fff0;
+    color: #00fff0;
+  }
+  
+  .btn.secondary:hover {
+    background: #00fff0;
+    color: #000;
+  }
+  
+  /* ===== Sections ===== */
+  section {
+    padding: 100px 50px;
+  }
+  
+  section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #00fff0; /* cyan accent */
+  }
+  
+  section p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    color: #f0f0f0;
+  }
+  
+  /* ===== About Section ===== */
+  .about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .about-image img {
+    width: 250px;
+    border-radius: 15px;
+    border: 3px solid #00fff0;
+  }
+  
+  .about-content {
+    max-width: 600px;
+  }
+  
+  /* ===== Skills Section ===== */
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skill-card {
+    background: rgba(255, 255, 255, 0.05); /* light overlay */
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+    color: #fff;
+  }
+  
+  .skill-card:hover {
+    background: #00fff0; /* cyan on hover */
+    color: #000;
+    transform: translateY(-5px);
+  }
+  
+  /* ===== Projects Section ===== */
+  .project-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .project-card:hover {
+    background: linear-gradient(135deg, #00fff0, #ff6bcb);
+    color: #000;
+    transform: translateY(-5px);
+  }
+  
+  .project-card img.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .project-screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* a bit more space between screenshots */
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .project-img.small-ss {
+    width: 100%;        /* responsive width */
+    max-width: 280px;   /* slightly larger than before */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-img.small-ss:hover {
+    transform: scale(1.05); /* subtle zoom effect */
+  }
+  
+  
+  /* ===== Hire & Contact Sections ===== */
+  .hire, .contact {
+    background: linear-gradient(120deg, #1c1c1c, #2c5364); /* slightly different dark gradient */
+  }
+  
+  .hire-details, .contact-info {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+  }
+  
+  .hire-details p, .contact-info p {
+    margin: 10px 0;
+  }
+  
+  /* ===== Footer ===== */
+ .footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #fff;
+}
+
+.footer .social-links a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .social-links a:hover {
+  color: #f39c12;
+}
+
+  
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    .about-wrapper {
+      flex-direction: column;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+    section {
+      padding: 80px 20px;
+    }
+  }
+  
