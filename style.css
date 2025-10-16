@@ -17,60 +17,95 @@
     color: inherit;
   }
   
-  /* ===== Hero Section ===== */
+ /* ===== Hero Section ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1c1c1c, #2c5364 100%);
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #00fff0; /* cyan accent */
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: #ff6bcb; /* highlight your name */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #f0f0f0; /* light text */
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hero-buttons a {
+  margin: 0;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  color: #f0f0f0;
+  background: linear-gradient(90deg, #00fff0, #ff6bcb); /* vibrant gradient */
+  border: none;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 255, 240, 0.4);
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #00fff0;
+  color: #00fff0;
+}
+
+.btn.secondary:hover {
+  background: #00fff0;
+  color: #000;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
   .hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 20px;
-    background: linear-gradient(135deg,  #1c1c1c, #2c5364 100%);
+    padding: 100px 20px;
   }
-  
+
   .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    color: #00fff0;/* cyan accent */
+    font-size: 2.2rem;
   }
-  
+
   .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #f0f0f0; /* light text */
+    font-size: 1rem;
   }
-  
-  .hero-buttons a {
-    margin: 0 10px;
-  }
-  
-  /* ===== Buttons ===== */
+
   .btn {
-    padding: 10px 25px;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: 0.3s;
-    color: #f0f0f0;
-    background: linear-gradient(90deg, #00fff0, #ff6bcb); /* vibrant gradient */
-    border: none;
+    width: 100%;
+    max-width: 250px;
   }
-  
-  .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 255, 240, 0.4);
-  }
-  
-  .btn.secondary {
-    background: transparent;
-    border: 2px solid #00fff0;
-    color: #00fff0;
-  }
-  
-  .btn.secondary:hover {
-    background: #00fff0;
-    color: #000;
-  }
-  
+}
+
   /* ===== Sections ===== */
   section {
     padding: 100px 50px;
